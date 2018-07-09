@@ -10,8 +10,9 @@
 
     <!--Description-->
     
-        <meta name="description" content="首先需要明确的是this指向是指函数的this指向，指向对象this指向问题主要分为4种，分别是1、全局情况下，默认指向window2、被对象调用，指向调用它的函数3、call，apply，bind改变this指向4、es6箭头函数
-1、全局下调用    var a = 9;    var obj ">
+        <meta name="description" content="首先需要明确的是this指向是指函数的this指向，指向对象this指向问题主要分为4种，分别是（1）全局情况下，默认指向window（2）被对象调用，指向调用它的函数（3）call，apply，bind改变this指向（4）es6箭头函数
+
+1、全局下调用123456789101112131415">
     
 
     <!--Author-->
@@ -165,8 +166,9 @@
 
             <!-- Post Main Content -->
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                <p>首先需要明确的是this指向是指函数的this指向，指向对象<br><br>this指向问题主要分为4种，分别是<br><br>1、全局情况下，默认指向window<br><br>2、被对象调用，指向调用它的函数<br><br>3、call，apply，bind改变this指向<br><br>4、es6箭头函数<br></p>
-<p><label style="color:blue" font-size:"30px"="">1、全局下调用</label><br>    var a = 9;<br>    var obj = {<br>        a: 1,<br>        fn: function () {<br>            console.log(this.a);<br>            function fn2 () {<br>                console.log(this.a);<br>            }<br>            fn2();<br>        },<br>    }<br>    var obj1 = {<br>        a: 2<br>    }<br>    obj.fn()</p>
+                <p>首先需要明确的是this指向是指函数的this指向，指向对象<br><br>this指向问题主要分为4种，分别是<br><br>（1）全局情况下，默认指向window<br><br>（2）被对象调用，指向调用它的函数<br><br>（3）call，apply，bind改变this指向<br><br>（4）es6箭头函数<br></p>
+<p><label style="color:blue"></label></p>
+<p></p><h3>1、全局下调用</h3><br><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">var a = 9;</span><br><span class="line">var obj = &#123;</span><br><span class="line">    a: 1,</span><br><span class="line">    fn: function () &#123;</span><br><span class="line">        console.log(this.a);</span><br><span class="line">        function fn2 () &#123;</span><br><span class="line">            console.log(this.a);</span><br><span class="line">        &#125;</span><br><span class="line">        fn2();</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;</span><br><span class="line">var obj1 = &#123;</span><br><span class="line">    a: 2</span><br><span class="line">&#125;</span><br><span class="line">obj.fn()</span><br></pre></td></tr></table></figure><p></p>
 
 
                 
